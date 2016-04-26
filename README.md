@@ -4,7 +4,7 @@ This python project will deploy an EC2 instance on AWS running AWS linux, Apache
 
 ## Requirements
 - AWS account with CloudFormation and EC2 enabled with IAM credentials.
-- AWS credentials file or AWS environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+- AWS credentials and config file or AWS environment variables `AWS_DEFAULT_REGION`, `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 - Python >= 2.7 with boto3, time, requests and argparse modules
 - AWS EC2 keypair 
 
@@ -15,10 +15,16 @@ git clone https://github.com/jason-tasker/stelligent-mini-project
 ```
 
 ## Execution
-Deploy 
+### Install 
 ```sh
 cd stelligent-mini-project
 python mini_project.py -k <EC2 registered SSH Key Pair>
+```
+
+### Delete
+```sh
+cd stelligent-mini-project
+python mini_project.py -c delete
 ```
 
 ## Usage
