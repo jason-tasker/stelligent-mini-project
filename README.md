@@ -15,13 +15,13 @@ git clone https://github.com/jason-tasker/stelligent-mini-project
 ```
 
 ## Execution
-### Install 
+##### Install 
 ```sh
 cd stelligent-mini-project
 python mini_project.py -k <EC2 registered SSH Key Pair>
 ```
 
-### Delete
+##### Delete
 ```sh
 cd stelligent-mini-project
 python mini_project.py -c delete
@@ -54,4 +54,26 @@ optional arguments:
   --access-ssh ACCESSSSH, -a ACCESSSSH
                         CIDR IP address for SSH access
                         
+```
+
+## Sample Output
+```text
+python mini_project.py -k default-test1
+Creating stack: stelligentminiproject
+This process can take a few minutes to complete
+Stack has completed.
+Instance ID: i-0cc580596b660946f
+Zone: us-west-2b
+Public DNS: ec2-54-187-245-95.us-west-2.compute.amazonaws.com
+Public IP: 54.187.245.95
+
+Checking if web site exists
+Web site exists
+
+You can access the website at http://ec2-54-187-245-95.us-west-2.compute.amazonaws.com
+
+
+python mini_project.py -k default-test1 -c delete
+Deleting stack: stelligentminiproject
+Stack stelligentminiproject deleted
 ```
