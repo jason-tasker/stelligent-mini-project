@@ -20,7 +20,7 @@ This python project will deploy an EC2 instance on AWS running AWS linux, Apache
 ## Installation
 Download the Mini Project:
 ```sh
-git clone https://github.com/jason-tasker/stelligent-mini-project
+git clone https://github.com/jason-tasker/stelligent-mini-project.git
 ```
 
 ## Execution
