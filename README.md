@@ -11,12 +11,13 @@ This python project will deploy an EC2 instance on AWS running AWS linux, Apache
 ## Installation
 Download the Mini Project:
 ```sh
-git clone https://github.com/jason-tasker/test.git
+git clone https://github.com/jason-tasker/stelligent-mini-project
 ```
 
 ## Execution
 Deploy 
 ```sh
+cd stelligent-mini-project
 python mini_project.py -k <EC2 registered SSH Key Pair>
 ```
 
