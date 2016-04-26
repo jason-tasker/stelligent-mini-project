@@ -8,6 +8,15 @@ This python project will deploy an EC2 instance on AWS running AWS linux, Apache
 - Python >= 2.7 with boto3, time, requests and argparse modules
 - AWS EC2 keypair 
 
+## Default Settings
+-Keyfile: "default-test1" - Default registered EC2 Keypair (Change to your registered Keypair during exectution)
+-EC2Instance: "t2.micro" - Default t2.micro instance
+-Template: "smp_cloudformation.json" - Default JSON file for Cloudformation deployment
+-Stackname: "stelligentminiproject" - Default Name of Stack for this project
+-Command: "install" - Default behavior is to install the stack, change to delete to delete the stack
+-AccessSSH: "0.0.0.0/0" - Default behavior is to all every site SSH access (only recommended for testing purposes and should be restricted)
+ 
+
 ## Installation
 Download the Mini Project:
 ```sh
